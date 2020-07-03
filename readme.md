@@ -29,7 +29,7 @@ Thanks to vue, I have been able to separate each chart in a new component and of
 
 ## **Technologies**
 
-* **Html** *(Canvas)*
+* **Html**&nbsp;&nbsp;*(Canvas)*
 * **Css**
 * **JavaScript**
 * [Vue](https://vuejs.org/)
