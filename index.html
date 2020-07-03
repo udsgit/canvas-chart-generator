@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <div id="top">
+            <h1>Creador de graficos</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th>nombre</th>
+                        <th>color</th>
+                        <th>cantidad</th>
+                    </tr>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input type="text" v-model="nuevoDato.nombre" placeholder="Sin nombre"></td>
+                        <td><input type="color" v-model="nuevoDato.color"></td>
+                        <td><input type="number" min="0" max="100" v-model="nuevoDato.cantidad" placeholder="1"></td>
+                        <td><button type="submit" @click="agregarDato()">Añadir</button></td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+        </div>
+        <table id="datos">
+            <thead>
+                <tr>
+                    <th v-for="(value,key) in datos[0]"> {{ key }}</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr v-for="(objeto,i) in datos">
+                    <td v-for="(dato,key) in objeto">
+                        <input v-if="key == 'nombre'" type="text" v-model="datos[i].nombre">
+                        <input v-else-if="key == 'cantidad'" type="number" min="1" max="100"
+                            v-model="datos[i].cantidad">
+                        <input v-else-if="key == 'color'" type="color" v-model="datos[i].color">
+                    </td>
+                    <td><button @click="eliminar(i)"> Borrar</button></td>
+                </tr>
+            </tbody>
+        </table>
+        <grafico-sectores ref="sectores" :datos="datos"></grafico-sectores>
+        <grafico-barras ref="barras" :datos="datos"></grafico-barras>
+        <grafico-columnas ref="columnas" :datos="datos"></grafico-columnas>
+    </main>
+    <script src="componentes/grafico-columnas.js"></script>
+    <script src="componentes/grafico-barras.js"></script>
+    <script src="componentes/grafico-sectores.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
