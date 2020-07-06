@@ -7,6 +7,7 @@ Canvas charts generator 📊 📈 with different options kinds.
 - [**Canvas Chart Generator**](#canvas-chart-generator)
   - [**Table of contents**](#table-of-contents)
   - [**General info**](#general-info)
+  - [**Demo**](#demo)
   - [**Screenshots**](#screenshots)
   - [**Technologies**](#technologies)
   - [**Setup**](#setup)
@@ -19,8 +20,15 @@ Canvas charts generator 📊 📈 with different options kinds.
 **Date**: February, 2020
 **Duration**: 1 Day.
 
-It was an exercise to practice a basic **Canvas** without libraries and I wanted to take advantage of **Vue** to improved it. 
+It was an exercise to practice a basic **Canvas** without libraries and I wanted to take advantage of **Vue** to improved it.
 Thanks to vue, I have been able to separate each chart in a new component and offer live options for add, set and delete the data added with options.
+
+## **Demo**
+
+You can try it using the [Demo](https://udsgit.github.io/canvas-chart-generator).
+
+> ![Screenshot](images/demo.gif)  
+> _Demo_
 
 ## **Screenshots**
 
@@ -29,10 +37,10 @@ Thanks to vue, I have been able to separate each chart in a new component and of
 
 ## **Technologies**
 
-* **Html**&nbsp;&nbsp;*(Canvas)*
-* **Css**
-* **JavaScript**
-* [**Vue**](https://vuejs.org/)
+- **Html**&nbsp;&nbsp;_(Canvas)_
+- **Css**
+- **JavaScript**
+- [**Vue**](https://vuejs.org/)
 
 ## **Setup**
 
@@ -45,12 +53,12 @@ git clone https://github.com/udsgit/canvas-chart-generator.git
 ## **Usage**
 
 1. Open the link from the [Demo](https://udsgit.github.io/canvas-chart-generator) or open the file **index.html** if you downloaded it.
-2. Now you can interact with the web, just write the name from the data that you want to convert to chart, next select the color and the percentage and press ***Añadir***.
+2. Now you can interact with the web, just write the name from the data that you want to convert to chart, next select the color and the percentage and press **_Añadir_**.
 3. After add all the data that you want, you have the live options to set and delete it.
 
 ## **Status**
 
-Project is: ***Completed.***
+Project is: **_Completed._**
 
 Because the functionality was to practice with **Canvas** and take advantage of **Vue**.
 
