@@ -27,13 +27,11 @@ Thanks to vue, I have been able to separate each chart in a new component and of
 
 You can try it using the [Demo](https://udsgit.github.io/canvas-chart-generator).
 
-> ![Screenshot](images/demo.gif)  
-> _Demo_
+> <img src="images/demo.gif"<br><i>Demo</i>
 
 ## **Screenshots**
 
-> ![Screenshot](images/example.png)
-> Example of generating chart on social networks.
+> <img src="images/example.png" width="300"/><br><i>Example of generating chart on social networks.</i>
 
 ## **Technologies**
 
