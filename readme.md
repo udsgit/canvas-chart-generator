@@ -31,7 +31,7 @@ You can try it using the [Demo](https://udsgit.github.io/canvas-chart-generator)
 
 ## **Screenshots**
 
-> <img src="images/example.png" width="300"/><br><i>Example of generating chart on social networks.</i>
+> <img src="images/example.png" height="150"/><br><i>Example of generating chart on social networks.</i>
 
 ## **Technologies**
 
